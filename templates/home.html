@@ -1,26 +1,39 @@
-{% load static %}<!DOCTYPE html>
+{% load static %}
+
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Drag and Drop Test App</title>
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-  </head>
-  <body>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+  <title>Drag and Drop Test App</title>
+
+</head>
+
+<body>
+  <div class="container">
     <h1>Drag and Drop Test</h1>
 
 
-  <div class="row">
-  <div class="col-md-6">
-  <form>
-  <div class="form-group">
-      <label for="comment">Test Area:</label>
-      <textarea class="form-control" rows="64" id="comment"></textarea>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-  </div>
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="comment">Test Area:</label>
+            <textarea class="form-control" rows="22" id="comment"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
   </div>
 
 
-  </body>
+</body>
+
 </html>
