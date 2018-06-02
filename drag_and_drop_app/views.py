@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django.core.files.storage import FileSystemStorage
 
 def home(request):
-    if request.method == 'POST' and request.FILES['the_file']:
-        the_file = request.FILES['the_file']
+    if request.method == 'POST' and request.FILES['file']:
+        the_file = request.FILES['file']
         fs = FileSystemStorage()
         filename = fs.save(the_file.name, the_file)
         uploaded_file_url = fs.url(filename)
